@@ -13,16 +13,19 @@ O objetivo é permitir a exploração visual e filtrada dos dados salariais de f
   - Nível de experiência
   - Tipo de contrato
   - Tamanho da empresa
+
 - Métricas principais (KPIs):
   - Salário médio anual (USD)
   - Salário máximo
   - Total de registros
   - Cargo mais frequente
+
 - Visualizações:
   - Top 10 cargos por salário médio
   - Distribuição de salários
   - Proporção entre tipos de trabalho (remoto, híbrido e presencial)
   - Mapa mundial com salário médio de **Data Scientists** por país
+
 - Tabela interativa com os dados filtrados
 
 ---
@@ -38,55 +41,53 @@ O objetivo é permitir a exploração visual e filtrada dos dados salariais de f
 
 ## 📁 Estrutura do Projeto
 
-📦 projeto
-┣ 📜 app.py
-┣ 📄 salarios_limpos.csv
-┗ 📘 README.md
-
+- 📦 projeto  
+  - 📜 app.py  
+  - 📄 salarios_limpos.csv  
+  - 📘 README.md  
 
 ---
 
 ## ▶️ Como Executar o Projeto
 
-1. Clone o repositório:
-
+### 1. Clone o repositório
+```bash
 git clone https://github.com/seu-usuario/seu-repositorio.git
-Instale as dependências:
+```
 
+### 2. Instale as dependências
+```bash
 pip install streamlit pandas plotly
+```
 
-
-Execute a aplicação:
-
+### 3. Execute a aplicação
+```bash
 streamlit run app.py
+```
 
-
-Acesse no navegador:
-
+### 4. Acesse no navegador
+```bash
 http://localhost:8501
+```
 
-📊 Fonte dos Dados
+---
 
-O arquivo salarios_limpos.csv contém dados tratados com informações como:
+## 📊 Fonte dos Dados
 
-Cargo
+O arquivo `salarios_limpos.csv` contém dados tratados com as seguintes informações:
 
-Salário anual em USD
+- Cargo
+- Salário anual em USD
+- Ano
+- Experiência
+- Tipo de contrato
+- Tipo de trabalho (remoto/presencial)
+- País de residência
 
-Ano
+---
 
-Experiência
+## 📌 Observações
 
-Tipo de contrato
-
-Tipo de trabalho (remoto/presencial)
-
-País de residência
-
-📌 Observações
-
-Todos os valores salariais estão em USD (anual).
-
-Gráficos e métricas se atualizam automaticamente conforme os filtros.
-
-Quando não há dados, o dashboard exibe mensagens de aviso.
+- Todos os valores salariais estão em **USD (anual)**  
+- Gráficos e métricas se atualizam automaticamente conforme os filtros  
+- Quando não há dados disponíveis, o dashboard exibe mensagens de aviso
