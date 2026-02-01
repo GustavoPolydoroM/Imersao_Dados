@@ -1,65 +1,56 @@
-📊 Dashboard de Análise de Salários na Área de Dados
+# 📊 Dashboard de Análise de Salários na Área de Dados
 
-Este projeto é um dashboard interativo desenvolvido com Streamlit, Pandas e Plotly, focado na análise de salários na área de dados ao longo dos anos.
-A ideia é simples: filtrar, visualizar e entender padrões salariais sem sofrer em planilhas infinitas.
+Este projeto é um **dashboard interativo** desenvolvido com **Streamlit**, **Pandas** e **Plotly**, focado na análise de salários na área de dados ao longo dos anos.
 
-🚀 Funcionalidades
+O objetivo é permitir a exploração visual e filtrada dos dados salariais de forma simples, clara e interativa.
 
-Filtros interativos por:
+---
 
-Ano
+## 🚀 Funcionalidades
 
-Nível de experiência
+- Filtros interativos por:
+  - Ano
+  - Nível de experiência
+  - Tipo de contrato
+  - Tamanho da empresa
+- Métricas principais (KPIs):
+  - Salário médio anual (USD)
+  - Salário máximo
+  - Total de registros
+  - Cargo mais frequente
+- Visualizações:
+  - Top 10 cargos por salário médio
+  - Distribuição de salários
+  - Proporção entre tipos de trabalho (remoto, híbrido e presencial)
+  - Mapa mundial com salário médio de **Data Scientists** por país
+- Tabela interativa com os dados filtrados
 
-Tipo de contrato
+---
 
-Tamanho da empresa
+## 🧠 Tecnologias Utilizadas
 
-Métricas principais (KPIs):
+- **Python**
+- **Streamlit**
+- **Pandas**
+- **Plotly Express**
 
-Salário médio anual (USD)
+---
 
-Salário máximo
+## 📁 Estrutura do Projeto
 
-Total de registros
+📦 projeto
+┣ 📜 app.py
+┣ 📄 salarios_limpos.csv
+┗ 📘 README.md
 
-Cargo mais frequente
 
-Visualizações:
+---
 
-Top 10 cargos com maior salário médio
+## ▶️ Como Executar o Projeto
 
-Distribuição de salários
-
-Proporção entre trabalho remoto, híbrido e presencial
-
-Mapa mundial com salário médio de Data Scientists por país
-
-Tabela interativa com os dados filtrados
-
-🧠 Tecnologias Utilizadas
-
-Python
-
-Streamlit
-
-Pandas
-
-Plotly Express
-
-📁 Estrutura do Projeto
-.
-├── app.py                  # Código principal do dashboard
-├── salarios_limpos.csv     # Base de dados tratada
-├── README.md               # Documentação do projeto
-
-▶️ Como Executar o Projeto
-
-Clone o repositório:
+1. Clone o repositório:
 
 git clone https://github.com/seu-usuario/seu-repositorio.git
-
-
 Instale as dependências:
 
 pip install streamlit pandas plotly
@@ -70,11 +61,13 @@ Execute a aplicação:
 streamlit run app.py
 
 
-Abra o navegador no endereço exibido no terminal (geralmente http://localhost:8501).
+Acesse no navegador:
+
+http://localhost:8501
 
 📊 Fonte dos Dados
 
-O arquivo salarios_limpos.csv contém dados salariais já tratados, incluindo informações como:
+O arquivo salarios_limpos.csv contém dados tratados com informações como:
 
 Cargo
 
@@ -86,7 +79,7 @@ Experiência
 
 Tipo de contrato
 
-Trabalho remoto/presencial
+Tipo de trabalho (remoto/presencial)
 
 País de residência
 
@@ -94,10 +87,6 @@ País de residência
 
 Todos os valores salariais estão em USD (anual).
 
-O dashboard se adapta automaticamente aos filtros selecionados.
+Gráficos e métricas se atualizam automaticamente conforme os filtros.
 
-Caso nenhum filtro retorne dados, os gráficos exibem mensagens de aviso.
-
-🧑‍💻 Autor
-
-Projeto desenvolvido para fins de estudo e análise de dados.
+Quando não há dados, o dashboard exibe mensagens de aviso.
